@@ -1,9 +1,41 @@
 /* Add styling for your page here */
 
 .App {
+    background-color: #E1EEf2;
+}
 
+.pageContent {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; 
+    justify-items: center; 
+    justify-content: space-between;
 }
 
 .BakeryItem {
-  
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    text-align: center;
 }
+
+.BakeryItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+  }
+
+.bakery-item img {
+    max-width: 100%; 
+  }
+
+  .cart {
+    width: 300px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: fixed; 
+    top: 50px; 
+    right: 20px; 
+    background-color: #fff;
+  }
